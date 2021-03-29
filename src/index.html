@@ -6,6 +6,7 @@
     <title>Relocation</title>
     <meta name="description" content="Relocation">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -16,13 +17,16 @@
               en
           </a>
           </nav>
-         <h1 class="header__title">Offshore dream</h1>
+          <div class="header__wrap">
+            <div class="header__title"><img src="img/heading.svg" alt="offshore dreams"></div>
+            <div class="header__clouds"><img src="img/header_cloud.png" alt="clouds"></div>
+          </div>
          <h2 class="header__subtitle">Get your freedom and relocate asap</h2>
          <div class="button_wrap">
           <div class="circle"></div>
           <div class="circle_big"></div>
-         <button data-modal="consultation" class="button">Learn more</button>
-
+         <button data-modal="consultation" class="button"><span>Learn more </span><img src="img/arrow.svg" alt="arrow"></button>
+          
         </div>
          <button id="down" class="down"></button>
 
@@ -56,11 +60,11 @@
         </div>
      </section>
 <section class="countries">
-    <img class="clouds" src="img/clouds-min.png" alt="clouds">
 
   <h2 class="title title_white">Where do you wanna go?</h2>
   <div class="container">
 <div class="countries__items_wrap">
+  <div class="countries__fon-text">Where do you wanna go?</div>
   <div class="countries__items">
     <div class="countries__item">
       <div class="countries__item_wrap">
@@ -117,34 +121,32 @@
           <div class="first-step__descr">Will be the application you sent. Fill out the forms, send your application and we will contact you as soon as possible!</div>
         </div>
         <form class="feed-form" id="consultation-form">
-          <label> enter your name  <input name="name" placeholder="John Doe" type="text"></label>
-          <label> enter your phone number <input name="phone" placeholder="+0 (___) ___ __ __"></label>
-          <label> enter your email <input name="email" placeholder="yourmail@gmail.com" type="email"></label> 
+          <label class="label"> enter your name  <input class="input" name="name" placeholder="John Doe" type="text"></label>
+          <label class="label"> enter your phone number <input class="input" name="phone" placeholder="+0 (___) ___ __ __"></label>
+          <label class="label"> enter your email <input class="input" name="email" placeholder="yourmail@gmail.com" type="email"></label> 
          <!--  <input type="submit" value="заказать консультацию"> -->
-         <button class="button button_submit" >send a request</button>
+         <input type="submit" class="button button_submit" value="Send a Request &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8250;"></input>
       </form>
       </div>
   </div>
 </div>
 </section>
-
-
 <div class="overlay">
   <div class="modal" id="consultation">
       <div class="modal__close">
           &times;
       </div>
-      <div class="modal__subtitle">Leave a request 
+      <div class="modal__subtitle">Leave a request <br>
         for a call back </div>
         <form class="feed-form">
-          <label> enter your name </label> <input name="name" placeholder="John Doe" type="text">
-          <label> enter your phone number </label> <input name="phone" placeholder="+0 (___) ___ __ __">
-          <label> enter your email </label> <input name="email" placeholder="yourmail@gmail.com" type="email">
+          <label class="label"> enter your name </label> <input class="input"  name="name" placeholder="John Doe" type="text">
+          <label class="label"> enter your phone number </label> <input class="input" name="phone" placeholder="+0 (___) ___ __ __">
+          <label class="label"> enter your email </label> <input class="input" name="email" placeholder="yourmail@gmail.com" type="email">
          <!--  <input type="submit" value="заказать консультацию"> -->
-         <button data-modal="consultation" class="button button_submit" >send a request</button></form>
+         <input type="submit" data-modal="consultation" class="button button_submit button_submit_modal" value="Send a Request &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8250;"></input></form>
   </div>
+  
 </div>
-
 <footer class="footer"> 
   © 2021 All rights reserved.
 </footer>
